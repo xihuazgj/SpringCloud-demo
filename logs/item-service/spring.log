@@ -1088,3 +1088,27 @@ Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionExcep
 17:57:14:428 DEBUG 26164 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
 17:57:14:428 DEBUG 26164 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
 17:57:14:429 DEBUG 26164 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+18:04:31:881  WARN 26164 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:04:31:881  WARN 26164 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:04:31:881  WARN 26164 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:04:31:882  WARN 26164 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:04:31:894  WARN 35696 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:04:31:895  WARN 35696 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:04:31:895  WARN 35696 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:04:31:895  WARN 35696 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:04:32:052  INFO 26164 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:04:32:056  INFO 26164 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:04:32:067  INFO 35696 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:04:32:069  INFO 35696 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:04:32:360  INFO 26164 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+18:04:32:360  INFO 26164 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@31bb6461[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+18:04:32:361  INFO 26164 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1720778192839_192.168.32.1_51268
+18:04:32:362  INFO 26164 --- [nacos-grpc-client-executor-109] c.a.n.c.remote.client.grpc.GrpcClient    : [1720778192839_192.168.32.1_51268]Ignore complete event,isRunning:false,isAbandon=false
+18:04:32:365  INFO 26164 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@c1ab3ca[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 110]
+18:04:32:367  INFO 26164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:04:32:375  INFO 35696 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+18:04:32:375  INFO 35696 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@348f2e5d[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+18:04:32:376  INFO 35696 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1720778208590_192.168.32.1_51569
+18:04:32:378  INFO 35696 --- [nacos-grpc-client-executor-111] c.a.n.c.remote.client.grpc.GrpcClient    : [1720778208590_192.168.32.1_51569]Ignore complete event,isRunning:false,isAbandon=false
+18:04:32:379  INFO 35696 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3a7d7448[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 112]
+18:04:32:383  INFO 26164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
