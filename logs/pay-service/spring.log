@@ -1,0 +1,552 @@
+18:47:00:944  INFO 15144 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 21.0.3 on guojunzhang with PID 15144 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+18:47:00:946 DEBUG 15144 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:47:00:946  INFO 15144 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+18:47:01:420  INFO 15144 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+18:47:01:613  INFO 15144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+18:47:01:619  INFO 15144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:47:01:619  INFO 15144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:47:01:689  INFO 15144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:47:01:689  INFO 15144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 717 ms
+18:47:01:721  WARN 15144 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+18:47:01:722  INFO 15144 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:47:01:730  INFO 15144 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:47:01:738 ERROR 15144 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+18:48:20:918  INFO 22876 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 21.0.3 on guojunzhang with PID 22876 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+18:48:20:919 DEBUG 22876 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:48:20:920  INFO 22876 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+18:48:21:397  INFO 22876 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+18:48:21:602  INFO 22876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+18:48:21:606  INFO 22876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:48:21:606  INFO 22876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:48:21:672  INFO 22876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:48:21:673  INFO 22876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 729 ms
+18:48:21:706  WARN 22876 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+18:48:21:707  INFO 22876 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:48:21:715  INFO 22876 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:48:21:725 ERROR 22876 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+18:57:24:501  INFO 7416 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 21.0.3 on guojunzhang with PID 7416 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+18:57:24:503 DEBUG 7416 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:57:24:503  INFO 7416 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+18:57:24:972  INFO 7416 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+18:57:25:171  INFO 7416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+18:57:25:174  INFO 7416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:57:25:175  INFO 7416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:57:25:237  INFO 7416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:57:25:237  INFO 7416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 708 ms
+18:57:25:276  WARN 7416 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+18:57:25:276  INFO 7416 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:57:25:284  INFO 7416 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:57:25:293 ERROR 7416 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+18:58:03:613  INFO 23156 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 23156 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+18:58:03:615 DEBUG 23156 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:58:03:615  INFO 23156 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+18:58:04:075  INFO 23156 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+18:58:04:227  INFO 23156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+18:58:04:232  INFO 23156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:58:04:232  INFO 23156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:58:04:294  INFO 23156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:58:04:294  INFO 23156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+18:58:04:326  WARN 23156 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+18:58:04:327  INFO 23156 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:58:04:335  INFO 23156 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:58:04:341 ERROR 23156 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:02:54:650  INFO 1644 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 1644 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:02:54:653 DEBUG 1644 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:02:54:653  INFO 1644 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:02:55:121  INFO 1644 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:02:55:259  INFO 1644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:02:55:264  INFO 1644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:02:55:264  INFO 1644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:02:55:321  INFO 1644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:02:55:321  INFO 1644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 650 ms
+19:02:55:351  WARN 1644 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:02:55:354  INFO 1644 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:02:55:361  INFO 1644 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:02:55:367 ERROR 1644 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:03:53:943  INFO 32956 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 32956 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:03:53:944 DEBUG 32956 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:03:53:945  INFO 32956 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:03:54:400  INFO 32956 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:03:54:554  INFO 32956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:03:54:559  INFO 32956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:03:54:559  INFO 32956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:03:54:614  INFO 32956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:03:54:614  INFO 32956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+19:03:54:643  WARN 32956 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:03:54:645  INFO 32956 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:03:54:652  INFO 32956 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:03:54:659 ERROR 32956 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:06:52:180  INFO 27372 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 27372 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:06:52:181 DEBUG 27372 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:06:52:182  INFO 27372 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:06:52:653  INFO 27372 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:06:52:796  INFO 27372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:06:52:800  INFO 27372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:06:52:800  INFO 27372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:06:52:860  INFO 27372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:06:52:860  INFO 27372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 658 ms
+19:06:52:892  WARN 27372 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:06:52:893  INFO 27372 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:06:52:900  INFO 27372 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:06:52:908 ERROR 27372 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:09:18:692  INFO 10348 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 10348 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:09:18:693 DEBUG 10348 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:09:18:694  INFO 10348 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:09:19:161  INFO 10348 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:09:19:311  INFO 10348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:09:19:315  INFO 10348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:09:19:315  INFO 10348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:09:19:379  INFO 10348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:09:19:379  INFO 10348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 665 ms
+19:09:19:410  WARN 10348 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.TradeClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:09:19:412  INFO 10348 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:09:19:421  INFO 10348 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:09:19:427 ERROR 10348 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.TradeClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.TradeClient' in your configuration.
+
+19:10:09:893  INFO 18572 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 18572 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:10:09:895 DEBUG 18572 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:10:09:895  INFO 18572 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:10:10:383  INFO 18572 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:10:10:528  INFO 18572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:10:10:531  INFO 18572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:10:10:532  INFO 18572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:10:10:588  INFO 18572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:10:10:588  INFO 18572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 672 ms
+19:10:10:620  WARN 18572 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:10:10:621  INFO 18572 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:10:10:628  INFO 18572 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:10:10:635 ERROR 18572 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:10:41:274  INFO 31104 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 31104 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:10:41:276 DEBUG 31104 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:10:41:276  INFO 31104 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:10:41:757  INFO 31104 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:10:41:900  INFO 31104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:10:41:905  INFO 31104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:10:41:905  INFO 31104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:10:41:963  INFO 31104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:10:41:963  INFO 31104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 667 ms
+19:10:41:995  WARN 31104 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:10:41:996  INFO 31104 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:10:42:005  INFO 31104 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:10:42:013 ERROR 31104 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:12:23:773  INFO 26776 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 26776 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:12:23:773 DEBUG 26776 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:12:23:774  INFO 26776 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:12:24:257  INFO 26776 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:12:24:403  INFO 26776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:12:24:407  INFO 26776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:12:24:407  INFO 26776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:12:24:466  INFO 26776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:12:24:467  INFO 26776 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 673 ms
+19:12:24:496  WARN 26776 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:12:24:498  INFO 26776 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:12:24:506  INFO 26776 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:12:24:515 ERROR 26776 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:16:21:881  INFO 20992 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 20992 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:16:21:882 DEBUG 20992 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:16:21:883  INFO 20992 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:16:22:355  INFO 20992 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:16:22:543  INFO 20992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:16:22:549  INFO 20992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:16:22:549  INFO 20992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:16:22:632  INFO 20992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:16:22:633  INFO 20992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+19:16:22:671  WARN 20992 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:16:22:672  INFO 20992 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:16:22:680  INFO 20992 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:16:22:686 ERROR 20992 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:16:57:146  INFO 32708 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 32708 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:16:57:147 DEBUG 32708 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:16:57:147  INFO 32708 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:16:57:614  INFO 32708 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:16:57:753  INFO 32708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:16:57:757  INFO 32708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:16:57:757  INFO 32708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:16:57:813  INFO 32708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:16:57:813  INFO 32708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+19:16:57:845  WARN 32708 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:16:57:846  INFO 32708 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:16:57:854  INFO 32708 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:16:57:860 ERROR 32708 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:17:29:291  INFO 25744 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 25744 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:17:29:292 DEBUG 25744 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:17:29:292  INFO 25744 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:17:29:748  INFO 25744 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:17:29:902  INFO 25744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:17:29:906  INFO 25744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:17:29:907  INFO 25744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:17:29:961  INFO 25744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:17:29:961  INFO 25744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
+19:17:29:992  WARN 25744 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:17:29:993  INFO 25744 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:17:30:001  INFO 25744 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:17:30:009 ERROR 25744 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:24:27:198  INFO 13560 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.23 on guojunzhang with PID 13560 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:24:27:199 DEBUG 13560 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:24:27:199  INFO 13560 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:24:27:654  INFO 13560 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:24:27:810  INFO 13560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:24:27:819  INFO 13560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:24:27:819  INFO 13560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:24:27:878  INFO 13560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:24:27:878  INFO 13560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+19:24:27:908  WARN 13560 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:24:27:910  INFO 13560 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:24:27:918  INFO 13560 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:24:27:925 ERROR 13560 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:27:21:667  INFO 15848 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 21.0.3 on guojunzhang with PID 15848 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:27:21:669 DEBUG 15848 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:27:21:670  INFO 15848 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:27:22:149  INFO 15848 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:27:22:353  INFO 15848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:27:22:358  INFO 15848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:27:22:358  INFO 15848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:27:22:419  INFO 15848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:27:22:419  INFO 15848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+19:27:22:455  WARN 15848 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:27:22:456  INFO 15848 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:27:22:464  INFO 15848 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:27:22:472 ERROR 15848 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:27:26:178  INFO 2352 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 21.0.3 on guojunzhang with PID 2352 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:27:26:179 DEBUG 2352 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:27:26:179  INFO 2352 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:27:26:707  INFO 2352 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c45f7c62-197d-3209-8cdc-2547cdc669f3
+19:27:26:935  INFO 2352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:27:26:940  INFO 2352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:27:26:941  INFO 2352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:27:27:009  INFO 2352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:27:27:010  INFO 2352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+19:27:27:049  WARN 2352 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payController' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\controller\PayController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payOrderServiceImpl' defined in file [D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes\com\hmall\pay\service\impl\PayOrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.UserClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+19:27:27:050  INFO 2352 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+19:27:27:067  INFO 2352 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:27:27:078 ERROR 2352 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.pay.service.impl.PayOrderServiceImpl required a bean of type 'com.hmall.api.client.UserClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.UserClient' in your configuration.
+
+19:29:44:101  INFO 11616 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 21.0.3 on guojunzhang with PID 11616 (D:\gun jun zhang\studyPlace\SpringClound\hmall\pay-service\target\classes started by zhangguojun in D:\gun jun zhang\studyPlace\SpringClound\hmall)
+19:29:44:103 DEBUG 11616 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:29:44:103  INFO 11616 --- [main] com.hmall.pay.PayApplication             : No active profile set, falling back to 1 default profile: "default"
+19:29:44:594  INFO 11616 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2e95566c-457e-32c7-a664-122148250fcb
+19:29:44:793  INFO 11616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+19:29:44:798  INFO 11616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:29:44:798  INFO 11616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:29:44:867  INFO 11616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:29:44:867  INFO 11616 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 737 ms
+19:29:44:965  INFO 11616 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+19:29:44:992  INFO 11616 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+19:29:45:455  INFO 11616 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:29:45:553  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 163f3f93-1d93-48f2-9ea8-4cbc491422f2
+19:29:45:586  INFO 11616 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+19:29:45:597  INFO 11616 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+19:29:45:602  INFO 11616 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+19:29:45:603  WARN 11616 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+19:29:45:607  INFO 11616 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+19:29:45:611  INFO 11616 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 7 values 
+19:29:45:615  INFO 11616 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 2 keys and 8 values 
+19:29:45:616  WARN 11616 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+19:29:45:616  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] RpcClient init label, labels = {module=naming, source=sdk}
+19:29:45:617  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:29:45:617  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:29:45:618  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:29:45:618  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Try to connect to server on start up, server: {serverIp = '192.168.32.131', server main port = 8848}
+19:29:46:012  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Success to connect to server [192.168.32.131:8848] on start up, connectionId = 1720783786087_192.168.32.1_60731
+19:29:46:013  INFO 11616 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Notify connected event to listeners.
+19:29:46:013  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:29:46:014  INFO 11616 --- [main] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001cb817ddb00
+19:29:46:041  INFO 11616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+19:29:46:048  INFO 11616 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.1.3:8086 register finished
+19:29:46:050  INFO 11616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:29:46:051  INFO 11616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:29:46:062  INFO 11616 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:29:46:106  INFO 11616 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 2.293 seconds (JVM running for 2.618)
+19:29:46:541  INFO 11616 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Receive server push request, request = NotifySubscriberRequest, requestId = 93
+19:29:46:543  INFO 11616 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [163f3f93-1d93-48f2-9ea8-4cbc491422f2] Ack server push request, request = NotifySubscriberRequest, requestId = 93
+19:30:29:942  INFO 11616 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:30:29:943  INFO 11616 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:30:29:944  INFO 11616 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+19:30:36:686  INFO 11616 --- [http-nio-8086-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+19:30:36:854  INFO 11616 --- [http-nio-8086-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+19:30:36:859 DEBUG 11616 --- [http-nio-8086-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order
+19:30:36:873 DEBUG 11616 --- [http-nio-8086-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 
+19:30:36:891 DEBUG 11616 --- [http-nio-8086-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 2
+19:35:24:211  WARN 11616 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+19:35:24:211  WARN 11616 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+19:35:24:212  WARN 11616 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+19:35:24:212  WARN 11616 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+19:35:24:225  INFO 11616 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+19:35:24:228  INFO 11616 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+19:35:24:534  INFO 11616 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+19:35:24:534  INFO 11616 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@24b8a393[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+19:35:24:534  INFO 11616 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1720783786087_192.168.32.1_60731
+19:35:24:536  INFO 11616 --- [nacos-grpc-client-executor-84] c.a.n.c.remote.client.grpc.GrpcClient    : [1720783786087_192.168.32.1_60731]Ignore complete event,isRunning:false,isAbandon=false
+19:35:24:536  INFO 11616 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@dd9de63[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 85]
+19:35:24:538  INFO 11616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+19:35:24:548  INFO 11616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
