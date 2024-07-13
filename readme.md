@@ -89,13 +89,13 @@ public class PayApplication {
     }
 }
 ```
+注意要在接受userInfo的模块启动类
+配置@EnableFeignClients(basePackages = "com.hmall.api.client",defaultConfiguration = DefaultFeignconfig.class)
+
 
 ![Snipaste_2024-07-13_20-42-52.jpg](https://img.picui.cn/free/2024/07/13/669280db7ad25.jpg)
 ![Snipaste_2024-07-13_16-36-01.jpg](https://img.picui.cn/free/2024/07/13/669280db4bd7c.jpg)
 ![Snipaste_2024-07-13_18-45-56.jpg](https://img.picui.cn/free/2024/07/13/669280db6cf02.jpg)
 ![Snipaste_2024-07-13_17-04-06.jpg](https://img.picui.cn/free/2024/07/13/669280db7b239.jpg)
 ![Snipaste_2024-07-13_16-32-00.jpg](https://img.picui.cn/free/2024/07/13/669280dba6e7c.jpg)
-
-注意要在接受userInfo的模块启动类
-配置@EnableFeignClients(basePackages = "com.hmall.api.client",defaultConfiguration = DefaultFeignconfig.class)
 
