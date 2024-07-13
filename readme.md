@@ -1,3 +1,4 @@
+![Snipaste_2024-07-13_13-48-14.jpg](https://img.picui.cn/free/2024/07/13/66921497468ce.jpg)
 1 .如何利用OpenFeign实现远程调用？
 
 1. -引入OpenFeign和SpringCloudLoadBalancer依赖
