@@ -146,7 +146,15 @@ public class PayApplication {
     }
 }
 ```
-
 注意要在接受userInfo的模块启动类
 配置@EnableFeignClients(basePackages = "com.hmall.api.client",defaultConfiguration = DefaultFeignconfig.class)
 
+
+一次请求进入微服务的过程
+springmvc的dispacherservelet->各种拦截器->contrller->service->持久层
+
+<img align="left" width="300px" src="https://img.picui.cn/free/2024/07/13/669280db7ad25.jpg" />
+<img align="right" width="300px" src="https://img.picui.cn/free/2024/07/13/669280db4bd7c.jpg" />
+<img align="left" width="300px" src="https://img.picui.cn/free/2024/07/13/669280db6cf02.jpg" />
+<img align="right" width="300px" src="https://img.picui.cn/free/2024/07/13/669280db7b239.jpg" />
+<img align="center" width="300px" src="https://img.picui.cn/free/2024/07/13/669280dba6e7c.jpg" />
