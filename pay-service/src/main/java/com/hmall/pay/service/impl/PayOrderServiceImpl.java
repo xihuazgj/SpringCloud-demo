@@ -4,7 +4,6 @@ package com.hmall.pay.service.impl;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.hmall.api.client.TradeClient;
 import com.hmall.api.client.UserClient;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
@@ -16,6 +15,8 @@ import com.hmall.pay.enums.PayStatus;
 import com.hmall.pay.mapper.PayOrderMapper;
 import com.hmall.pay.service.IPayOrderService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,11 +30,13 @@ import java.time.LocalDateTime;
  * @author 虎哥
  * @since 2023-05-16
  */
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> implements IPayOrderService {
     private final UserClient userClient;
-    private final TradeClient tradeClient;
+    //private final TradeClient tradeClient; //同步调用
+    private final RabbitTemplate rabbitTemplate; //异步调用，使用rabbitmq
     @Override
     public String applyPayOrder(PayApplyDTO applyDTO) {
         // 1.幂等性校验
@@ -59,7 +62,16 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
             throw new BizIllegalException("交易已支付或关闭！");
         }
         // 5.修改订单状态
-        tradeClient.markOrderPaySuccess(po.getBizOrderNo());
+        //tradeClient.markOrderPaySuccess(po.getBizOrderNo()); //这是同步调用
+
+        //5.修改订单状态,使用rabbitma发消息异步调用
+        //使用try-catch防止对原有业务造成影响
+        try {
+            rabbitTemplate.convertAndSend("pay.direct"
+                    ,"pay.success",po.getBizOrderNo());
+        }catch (Exception e){
+            log.error("发送支付状态通知失败，订单id：{}",po.getBizOrderNo(),e);
+        }
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {
